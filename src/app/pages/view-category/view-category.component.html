@@ -1,0 +1,20 @@
+<div class="view-category-container">
+    <div class="view-category-content">
+        <div class="title-container">
+            <p class="mini-title">Vlad's</p>
+            @if(title){
+                <p class="title">{{title}} <span>({{movieCards.length}})</span></p>
+            }
+        </div>
+        <div class="search-container">
+            <app-input [items]="movieCards" (filteredItems)="filteredMovieCards = $event"></app-input>
+        </div>
+        <div class="movie-cards-section">
+            @for (item of filteredMovieCards; track $index) {
+                <div class="movie-card">
+                    <app-movie-card [config]="item"></app-movie-card>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+/* Each movie card */
+.movie-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background: #0F1424;
+    /* Dark background color for the card */
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
+    margin: 5px;
+    cursor: pointer;
+
+
+
+
+    /* Container for the image */
+    .image-container {
+        width: 100%;
+        /* Full width of the card */
+        height: 250px;
+        /* Fixed height */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 13px;
+        /* Padding for the frame effect */
+        background-color: #333;
+        box-sizing: border-box;
+        /* Prevents padding from expanding the width */
+        overflow: hidden;
+        /* Ensures images that overflow don't disrupt layout */
+    }
+
+    /* Make sure images don't exceed container size */
+    .image-container {
+        width: 100%;
+        height: 411px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Card title or name */
+    .name {
+        margin-bottom: 25px;
+        font-size: 17px;
+        font-weight: bold;
+        color: #EBEEF5;
+        text-align: center;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+}

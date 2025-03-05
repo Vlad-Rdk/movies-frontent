@@ -1,0 +1,25 @@
+@import '../../../themes/theme.scss';
+
+.input-container{
+    display: flex;
+    width: 100%;
+    padding: 20px 18px;
+    column-gap: 10px;
+    border-radius: 13px;
+    border: 1px solid #20283E;
+    background-color: #0F1627;
+    i{
+        font-size: 20px;
+        color: $app-text-gray;
+
+    }
+
+    input{
+        flex:1;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+}

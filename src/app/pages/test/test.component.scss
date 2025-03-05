@@ -1,0 +1,13 @@
+.movies-section {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 10px; /* Adds space between the cards */
+    padding: 16px;
+    width: 100%; /* Ensure the parent container takes the full width */
+    box-sizing: border-box; /* Prevent overflow */
+
+    .movie-card{
+        width: calc(100%/3);
+    }
+  }
